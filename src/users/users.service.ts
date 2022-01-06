@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { Role } from 'src/auth/roles.enum';
 import { User } from './interfaces/user.interface';
 
 @Injectable()
@@ -8,18 +9,15 @@ export class UsersService {
       userId: 1,
       email: 'lawalabdulrasheedbolaji@gmail.com',
       password: 'climate01',
+      roles: [Role.Admin, Role.User],
     },
     {
       userId: 2,
       email: 'rasheed@bonango.io',
       password: 'password123',
+      roles: [Role.User],
     },
   ];
-
-  // createUser(user: User): string {
-  //   this.users.push(user);
-  //   return 'User successfully created';
-  // }
 
   findAllUsers(): User[] {
     return this.users;
