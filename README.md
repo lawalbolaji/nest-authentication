@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Jwt and Local Auth Passport Strategies in NestJs
 
 ## Installation
 
